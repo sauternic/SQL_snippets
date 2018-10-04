@@ -1,5 +1,7 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 - Befehle sind case-insensitive!
 - Jeder Befehl mit ';' abschliessen!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -22,8 +24,8 @@ CREATE TABLE kontakte(tel TEXT NOT NULL,name TEXT NOT NULL,vorname TEXT NOT NULL
 Datenbanken Anzeigen:
 ====================
 
-SHOW databases;
-
+SHOW DATABASES;
+SHOW TABLES;
 
 
 Datenbank wechseln:
