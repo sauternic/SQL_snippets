@@ -13,7 +13,7 @@ CREATE DATABASE foo;
 Tabellen erzeugen:
 =================
 
-CREATE TABLE kontakte(tel text not null,name text not null,vorname text not null);
+CREATE TABLE kontakte(tel TEXT NOT NULL,name TEXT NOT NULL,vorname TEXT NOT NULL);
                       ===               ====               =======
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -40,8 +40,10 @@ Einügen:
 ========
 
 INSERT [INTO] kontakte(tel, name, vorname) VALUES ('079', 'sauter', 'nicolas');
-                                         ======					  
-					  
+                                           ======					  
+oder mehrer gleichzeitig:
+INSERT [INTO] kontakte(name, vorname) VALUES ('Sauter','Nicolas'), ('Kundert','Reto'), ('Sauter','Patricia');	
+                                              ==================  (...) entspricht einem Eintrag(eine Zeile)				  
 
 					  
 Abfragen:
@@ -65,14 +67,7 @@ Löschen:
 DELETE FROM kontakte WHERE vorname="nicolas";
        ====(nur hier nötig!)
 
-					  
-
-					  
-*******************************************************************************************					  
-					  
-	
-	
-
+					
 
 
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
@@ -85,5 +80,9 @@ Platzhalterzeichen bei LIKE
 _  ein einzelnes Zeichen das auch fehlen kann.
 
 Bsp: SELECT * FROM kontakte WHERE vorname LIKE 'n%';
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
 
 
