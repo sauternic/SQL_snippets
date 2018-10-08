@@ -5,14 +5,14 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
-Datenbank erzeugen:
+Datenbank erzeugen
 ==================
 
 CREATE DATABASE foo;
 
 
 
-Tabellen erzeugen:(noch ohne Werte, nur die Spaltenüberschriften)
+Tabellen erzeugen(noch ohne Werte, nur die Spaltenüberschriften)
 =================
 
 CREATE TABLE kontakte(tel TEXT NOT NULL,name TEXT NOT NULL,vorname TEXT NOT NULL);
@@ -21,14 +21,14 @@ CREATE TABLE kontakte(tel TEXT NOT NULL,name TEXT NOT NULL,vorname TEXT NOT NULL
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-Datenbanken Anzeigen:
+Datenbanken Anzeigen
 ====================
 
 SHOW DATABASES;
 SHOW TABLES;
 
 
-Datenbank wechseln:
+Datenbank wechseln
 ==================
 
 USE foo;
@@ -38,8 +38,8 @@ USE foo;
 
 
 				  
-Einügen:
-========
+Einügen
+=======
 
 INSERT [INTO] kontakte(tel, name, vorname) VALUES ('079', 'sauter', 'nicolas');
                                            ======					  
@@ -48,7 +48,7 @@ INSERT [INTO] kontakte(name, vorname) VALUES ('Sauter','Nicolas'), ('Kundert','R
                                               ==================  (...) entspricht einem Eintrag(eine Zeile)				  
 
 					  
-Abfragen:
+Abfragen
 ========
 
 SELECT * FROM kontakte;
@@ -56,14 +56,14 @@ SELECT * FROM kontakte;
 					  					  
 
 										  
-Ändern:
+Ändern
 ======
 
 UPDATE kontakte SET tel='079 505' WHERE vorname='nicolas';
 
 
 
-Löschen:
+Löschen
 =======
 
 DELETE FROM kontakte WHERE vorname="nicolas";
