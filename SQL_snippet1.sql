@@ -3,22 +3,39 @@
 - Jeder Befehl mit ';' abschliessen!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-//////////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 Datenbank erzeugen
 ==================
 
-CREATE DATABASE foo;
+CREATE DATABASE foo CHARACTER SET utf8;
+
 
 
 
 Tabellen erzeugen(noch ohne Werte, nur die Spaltenüberschriften)
 =================
 
-CREATE TABLE kontakte(tel TEXT NOT NULL,name TEXT NOT NULL,vorname TEXT NOT NULL);
-                      ===               ====               =======
+CREATE TABLE kontakte1(tel TEXT NOT NULL, name TEXT NOT NULL, vorname TEXT NOT NULL);
+                       ===                ====                =======
+					  
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
+Etwas komplizierter:
+
+Mit:
+- AUTO_INCREMENT
+- DEFAULT CURRENT_TIMESTAMP				  
+
+CREATE TABLE kontakte2(id INT NOT NULL AUTO_INCREMENT, einträge TEXT NOT NULL, zeit TIMESTAMP NOT NULL  DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY (id));
+                       ==                              ========                ====                                                ===========
+
+
+					  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
 
 Datenbanken Anzeigen
