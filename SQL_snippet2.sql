@@ -29,15 +29,21 @@ DROP TABLE kommentare;
 Tabellen ändern(Spalte vorname):
 ===============
 
-ALTER TABLE kontakte MODIFY [COLUMN] vorname varchar(80) not null;
+ALTER TABLE kontakte MODIFY [COLUMN] vorname varchar(80) not null [FIRST|AFTER column_name];
                      ALTER   COLUMN( -> SQL Server/MS Acess)
 
+oder:
 
+
+ALTER TABLE kontakte CHANGE [COLUMN] vorname vorname varchar(80) not null [FIRST|AFTER column_name];					 
+	
+
+	
 
 Neue Spalte
 ===========
 
-ALTER TABLE kontakte ADD tel int;
+ALTER TABLE kontakte ADD tel int [FIRST|AFTER column_name];
 
 
 
