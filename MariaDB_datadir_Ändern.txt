@@ -34,4 +34,4 @@ Vorwort:
 Mit SQL datadir abfragen
 =========================
 
-SELECT @@datadir
+SELECT @@datadir;
