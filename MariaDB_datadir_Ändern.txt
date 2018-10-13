@@ -1,0 +1,37 @@
+Es gibt viele komplizierte Anleitungen im Netz
+bei denen ich zumindest nicht durchblicke,
+dabei ist es sooooo einfach! :)))))
+
+***********************************************************************************************************
+
+Anleitung:
+=========
+
+Vorwort:
+   
+   - Es muss eigentlich nur eine Zeile in my.ini geändert werden!!(datadir=<neuer_pfad>)
+
+
+1. my.ini suchen. Ist in xammp 
+   C:\xampp\mysql\bin\my.ini
+
+2. Dort 'datadir' suchen und neuer Pfad eingeben.
+   zb. datadir = "G:/MariaDB2"
+
+3. Seeeeeehr wichtig: 
+   In neuem Pfad muss ein 'mysql Ordner/Datenbank' sein.(Sonst kann MySQL nicht mehr Starten! :( )
+   Typ: Einfach kopieren vom ersten Speicherort.
+ 
+4. Das der MySQL Dienst gestoppt und neu gestartet werden muss
+   versteht sich von selbst!? ;)
+   
+   Ps: In xampp hats ein 'Control Panel' auf dem man bequem auf 'Starten/Stoppen' klicken kann! :)))
+   
+   
+*************************************************************************************************************
+
+
+Mit SQL datadir abfragen
+=========================
+
+SELECT @@datadir
