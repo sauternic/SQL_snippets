@@ -3,7 +3,7 @@ Für Beispiel unten gilt
 
 Datenbank heisst: foo
 Tabelle heisst:   kontakte
-
+Benutzer heisst:  nicolas
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -56,7 +56,7 @@ Rechte einem User für eine 'Datenbank' vergeben
 =============================================
 
 
-> GRANT SELECT ON foo.* TO nicolas'@'localhost [IDENTIFIED BY '<passwort>'];
+> GRANT SELECT ON foo.* TO nicolas'@'localhost [IDENTIFIED BY '<passwort>'];(Gibt automatisch einen MD5-Hash)
 
 
 
@@ -115,13 +115,29 @@ Ps: Die Rechte sind in den folgenden Tabellen der mysql Datenbank zu finden:
 Passwort am Super-User 'root' geben
 ===================================
 
-Da die Berechtigungen ja in der Tabelle user von Datenbanke mysql sind,
+Da die Berechtigungen ja in der Tabelle 'user' von der Datenbank 'mysql' sind,
 kann man diese direkt Ändern.(Vorsicht dass man sich nicht selber Ausschliesst*)
 Nachher Dienst neu Starten um die neuen Berechtigungen einlesen zu lassen.(oder FLUSH PRIVILEGES;)
  
+               
+			       <MD5-Hash> = password('<passwort>');
+				   ==========
 
- > update user set password = password('<passwort>') where user = 'root';
+ 
+ > UPDATE USER SET password = password('<passwort>') WHERE USER = 'root';
+ 
+       
+        
+		
+		oder:(schneller und bequemer)
+ 
+ 
+ 
+ > SET password = password('<Passwort>'); (Für den aktuellen Benutzer, der angemeldet ist)
+ > SET password FOR nicolas = password('<Passwort>');(Für beliebigen Benutzer)
 
+  
+  
   ->phpMyAdmin wird dann die Verbindung verlieren.
   ->einfach in 'C:\xampp\phpMyAdmin\config.inc.php' das neue Passwort angeben.
  
