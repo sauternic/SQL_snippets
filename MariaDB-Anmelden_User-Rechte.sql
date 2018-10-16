@@ -48,7 +48,7 @@ CREATE USER nicolas@localhost;
 Benutzer löschen
 ================
 
-DROP USER nicolas'@'localhost;
+DROP USER nicolas@localhost;
 
 
 
