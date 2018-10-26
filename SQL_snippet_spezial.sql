@@ -50,27 +50,3 @@ INTO TABLE mitarbeiter
 FIELDS TERMINATED BY '\t'
 LINES TERMINATED BY '\r\n'
 
-
-
-
-**************************************************************************************************************************************
-
-
-
-
-PRIMARY KEY Erzeugen
-====================
-
-ALTER TABLE mitarbeiter ADD PRIMARY KEY(pers_nr); (kann auch aus mehreren Spalten bestehen ...KEY(pers_nr, punkte, usw.))
-                              ===             =======
-
-
-PRIMARY KEY Löschen
-===================
-
-ALTER TABLE mitarbeiter DROP PRIMARY KEY;
-                              ====
-
-
-
-
