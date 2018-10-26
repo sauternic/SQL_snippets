@@ -46,7 +46,8 @@ Ein Beispiel
 LOAD DATA INFILE 'C:/Users/Sauter/Documents/rbl.txt'
 
 INTO TABLE mitarbeiter
+     =====(wird gern Vergessen!)
 
-FIELDS TERMINATED BY '\t'
-LINES TERMINATED BY '\r\n'
+FIELDS TERMINATED BY '\t'  (Nicht nötig, weil Default)
+LINES TERMINATED BY '\r\n' (Wenn das fehlt Warnung: Note: #1265 Daten abgeschnitten für Feld 'punkte' in Zeile 1)
 
