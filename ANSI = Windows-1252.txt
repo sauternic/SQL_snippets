@@ -1,0 +1,7 @@
+Bei Expot mit phpMyAdmin
+========================
+
+Einstellungen
+
+- CSV for MS Excel
+- windows-1252 (ANSI)
