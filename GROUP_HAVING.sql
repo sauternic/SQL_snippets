@@ -5,7 +5,7 @@ SELECT r.gruppe AS 'Gruppe',
        count(*) AS 'Anzahl',                  (ev. mit Backticks Arbeiten '`')
        group_concat(r.name) AS 'Alle Namen'
 
-FROM rbl_mitarbeiter r
+FROM mitarbeiter r
 
 GROUP by r.gruppe
 
