@@ -37,7 +37,7 @@ ENCLOSED BY '"';          (schliesst diese Zeichen aus)
 LINES TERMINATED BY '|';  (Ende einer Zeile in Windows '\r\n')
 
 ESCAPED BY '\^';          (^ statt \ als Escape Zeichen)
-
+IGNORE 1 LINES;           (erste Zeile wird ignoriert)
 
 
 Ein Beispiel
