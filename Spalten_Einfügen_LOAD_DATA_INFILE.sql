@@ -50,4 +50,16 @@ INTO TABLE mitarbeiter
 
 FIELDS TERMINATED BY '\t'  (Nicht nötig, weil Default)
 LINES TERMINATED BY '\r\n' (Wenn das fehlt Warnung: Note: #1265 Daten abgeschnitten für Feld 'punkte' in Zeile 1)
+                              
+   
+                              
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                              
+                              
+Tutorial:
+'https://www.thegeekstuff.com/2016/11/mysql-load-data-infile/'
+                              
+                              
+
+   
 
